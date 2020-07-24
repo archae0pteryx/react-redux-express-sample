@@ -10,7 +10,8 @@
     "test:client:watch": "yarn workspace server test:watch",
     "test:server": "yarn workspace server test",
     "test:server:watch": "yarn workspace server test:watch",
-    "build:client": "yarn workspace client build"
+    "build:client": "yarn workspace client build",
+    "clean": "npm cache clean --force && ./scripts/cleanup.sh"
   },
   "workspaces": [
     "packages/*"
