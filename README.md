@@ -11,15 +11,17 @@ client: http://localhost:1234
 server: http://localhost:3001
 
 ---
+
 ```
 # useful scripts
 yarn run:client|server
 yarn test:client|server?:watch
 ```
 
-## Instructions
+---
+### Project Requirements
 
-### Frontend
+#### Frontend
 
 - Create a multi component React/Redux/Node app to process results from a REST service. 
 - Provide ability for user to search the JSON data by title.
@@ -28,7 +30,7 @@ yarn test:client|server?:watch
 - Provide ability for user to edit the entry and have it saved in the local Redux store. (the edited entry should be presented on subsequent searches until page reload)
 - *bonus* Incorporate auto-complete to predict what the user will type next
 
-### Backend:
+#### Backend:
 - Node Express Server
 - The Node Express Server should provide a REST API to return JSON data that it retrieves from http://jsonplaceholder.typicode.com/posts
 
