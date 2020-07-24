@@ -1,5 +1,5 @@
 describe('client tests', () => {
-  it('tests', done => {
-    done()
+  it('tests', () => {
+    expect(true).toBe(true)
   })
 })

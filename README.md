@@ -9,3 +9,6 @@ yarn run:client|server
 yarn test:client|server?:watch
 yarn clean
 ```
+
+To link workspace deps:
+```lerna link convert```
