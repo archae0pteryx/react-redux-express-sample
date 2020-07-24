@@ -19,7 +19,7 @@ plugins:
 rules:
   indent:
     - error
-    - 2
+    - 4
   linebreak-style:
     - error
     - unix
@@ -29,3 +29,6 @@ rules:
   semi:
     - error
     - never
+  space-before-function-paren:
+    - error
+    - always

@@ -2,6 +2,7 @@ env:
   browser: true
   commonjs: true
   es6: true
+  node: true
 extends:
   - 'eslint:recommended'
   - 'plugin:jest/recommended'
@@ -13,7 +14,7 @@ parserOptions:
 rules:
   indent:
     - error
-    - 2
+    - 4
   linebreak-style:
     - error
     - unix
@@ -23,3 +24,6 @@ rules:
   semi:
     - error
     - never
+  space-before-function-paren:
+    - error
+    - always

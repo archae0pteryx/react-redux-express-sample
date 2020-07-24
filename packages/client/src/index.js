@@ -1,9 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Bootstrap from './containers/Bootstrap'
 
-
-function App () {
-    return <div>Test</div>
-}
-
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<Bootstrap />, document.getElementById('app'))
