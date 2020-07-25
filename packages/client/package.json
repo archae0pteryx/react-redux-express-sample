@@ -11,9 +11,27 @@
     "test": "jest .",
     "test:watch": "jest --watchAll ."
   },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@testing-library/react": "^10.4.7",
+    "redux-mock-store": "^1.5.4"
   }
 }

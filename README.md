@@ -1,4 +1,7 @@
 ### Setup / Run
+
+copy packages/server `.env.example` to `.env`
+
 ```bash
 # install all project deps
 yarn

@@ -1,7 +1,7 @@
 const axios = require('axios').default
 const { API_URL } = process.env
 
-async function fetchExternalData () {
+async function getPosts () {
     try {
         const { data } = await axios.get(`${API_URL}`)
         return handleSuccess(data)
@@ -26,5 +26,5 @@ function handleSuccess (data) {
 }
 
 module.exports = {
-    fetchExternalData
+    getPosts
 }

@@ -1,4 +1,4 @@
-const { fetchExternalData } = require('./service')
+const { getPosts } = require('./service')
 
 module.exports = function routes (app) {
     app.get('/heartbeat', (req, res) => {
@@ -6,7 +6,7 @@ module.exports = function routes (app) {
     })
 
     app.get('/posts', async (req, res) => {
-        const resp = await fetchExternalData()
+        const resp = await getPosts()
         res.send(JSON.stringify(resp))
     })
 }

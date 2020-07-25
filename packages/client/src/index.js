@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Bootstrap from './containers/Bootstrap'
+import {Root} from './Root'
+import {RootErrorBoundary} from './components/RootErrorBoundry'
 
-ReactDOM.render(<Bootstrap />, document.getElementById('app'))
+ReactDOM.render(<RootErrorBoundary><Root /></RootErrorBoundary>, document.getElementById('app'))

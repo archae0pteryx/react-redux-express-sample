@@ -1,9 +1,3 @@
-const fs = require('fs')
-
-if (!fs.existsSync('./.env')) {
-    fs.copyFileSync('./.env.example', './.env')
-}
-
 require('dotenv').config()
 
 const express = require('express')

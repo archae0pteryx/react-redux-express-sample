@@ -7,7 +7,7 @@
     "run:client": "yarn workspace client start",
     "run:server": "yarn workspace server start",
     "test:client": "yarn workspace client test",
-    "test:client:watch": "yarn workspace server test:watch",
+    "test:client:watch": "yarn workspace client test:watch",
     "test:server": "yarn workspace server test",
     "test:server:watch": "yarn workspace server test:watch",
     "build:client": "yarn workspace client build"
