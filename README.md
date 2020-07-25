@@ -19,11 +19,15 @@ yarn test:client|server?:watch
 ```
 
 ---
+
+### API Documentation
+GET `/heartbeat` > ok 200
+
 ### Project Requirements
 
 #### Frontend
 
-- Create a multi component React/Redux/Node app to process results from a REST service. 
+- Create a multi component React/Redux/Node app to process results from a REST service.
 - Provide ability for user to search the JSON data by title.
 - Results of user search should be presented on the page
 - Provide ability for user to select an entry from the results and have it populate an edit form. * Provide ability for user to type the title of an entry in the edit form and have it populate the form
