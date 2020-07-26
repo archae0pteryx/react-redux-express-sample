@@ -1,6 +1,6 @@
 import React from 'react'
 import { node } from 'prop-types'
-import {Error} from './Error'
+import {Error} from '../components/Error'
 
 export class RootErrorBoundary extends React.Component {
     constructor (props) {

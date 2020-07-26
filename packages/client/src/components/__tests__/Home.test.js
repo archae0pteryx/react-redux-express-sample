@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Home from '../Home'
+import Home from '../../screens/Home'
 import { MockReduxStore } from '../../testHelpers/MockReduxStore'
 import * as actions from '../../redux/actions'
 

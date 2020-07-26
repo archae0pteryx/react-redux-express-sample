@@ -1,2 +1,5 @@
 export const SET_POSTS = 'SET_POSTS'
 export const TOGGLE_LOADING = 'TOGGLE_LOADING'
+export const INIT = 'INIT'
+export const SAVE_POST = 'SAVE_POST'
+export const SET_FILTER = 'SET_FILTER'
