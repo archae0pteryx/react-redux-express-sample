@@ -1,6 +1,6 @@
 import React from 'react'
-import { node } from 'prop-types'
-import {Error} from '../components/Error'
+import PropTypes from 'prop-types'
+import { Error } from '../components/Error'
 
 export class RootErrorBoundary extends React.Component {
     constructor (props) {
@@ -30,5 +30,5 @@ export class RootErrorBoundary extends React.Component {
 }
 
 RootErrorBoundary.propTypes = {
-    children: node.isRequired,
+    children: PropTypes.node.isRequired,
 }

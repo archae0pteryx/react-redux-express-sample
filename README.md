@@ -24,8 +24,9 @@ yarn test:client|server?:watch
 ---
 
 ### API Documentation
-GET `/heartbeat` > ok 200
+GET `/heartbeat` > ok
 
+GET `/posts/` > `[{id,userId,title,body}]`
 ### Project Requirements
 
 #### Frontend
@@ -33,7 +34,8 @@ GET `/heartbeat` > ok 200
 - Create a multi component React/Redux/Node app to process results from a REST service.
 - Provide ability for user to search the JSON data by title.
 - Results of user search should be presented on the page
-- Provide ability for user to select an entry from the results and have it populate an edit form. * Provide ability for user to type the title of an entry in the edit form and have it populate the form
+- Provide ability for user to select an entry from the results and have it populate an edit form.
+- Provide ability for user to type the title of an entry in the edit form and have it populate the form
 - Provide ability for user to edit the entry and have it saved in the local Redux store. (the edited entry should be presented on subsequent searches until page reload)
 - *bonus* Incorporate auto-complete to predict what the user will type next
 

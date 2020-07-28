@@ -18,22 +18,21 @@
     "last 3 ios_saf versions",
     "last 3 safari versions"
   ],
-  "resolutions": {
-    "styled-components": "^5"
-  },
   "dependencies": {
     "axios": "^0.19.2",
+    "bulma": "^0.9.0",
     "dotenv": "^8.2.0",
     "formik": "^2.1.5",
     "lodash": "^4.17.19",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0",
+    "react-is": ">= 16.8.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^5.1.1"
+    "st": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",

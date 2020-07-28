@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import _ from 'lodash'
-
 import * as actions from '../redux/actions'
 import { Loading, SearchBar } from '../components'
 import { PostList } from '../containers'
@@ -17,11 +16,14 @@ function Home({ getPosts, posts, loading, init, filter }) {
         filter.length >= 1
             ? _.filter(posts, (post) => post.title.indexOf(filter) > -1)
             : posts
+
+    const uniqueUsers = Object.keys(_.groupBy(postsToShow, 'userId')).length || 0
+
     return loading ? (
         <Loading />
     ) : (
-        <div>
-            <SearchBar numFound={postsToShow.length}/>
+        <div className='box'>
+            <SearchBar numFound={postsToShow.length} uniqueUsers={uniqueUsers}/>
             <PostList posts={postsToShow} />
         </div>
     )

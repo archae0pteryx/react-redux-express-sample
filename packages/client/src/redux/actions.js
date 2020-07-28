@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { SET_POSTS, TOGGLE_LOADING, INIT, SAVE_POST, SET_FILTER } from './types'
 
-
 export const getPosts = () => async (dispatch) => {
     dispatch({
         type: TOGGLE_LOADING,
@@ -11,7 +10,8 @@ export const getPosts = () => async (dispatch) => {
         type: INIT,
         payload: true
     })
-    console.log('fetching data...')
+
+    console.info('[+] fetching data...')
     const { data } = await axios.get('http://localhost:3001/posts')
 
     dispatch({

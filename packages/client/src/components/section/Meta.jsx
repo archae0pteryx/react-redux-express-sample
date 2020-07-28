@@ -3,10 +3,9 @@ import PropTypes from 'prop-types'
 
 export function Meta({ userId, id }) {
     return (
-        <div>
-            <p>id: {id}</p>
-            <p>user: {userId}</p>
-        </div>
+        <p className='is-size-7 has-text-right' data-testid='section-meta'>
+            id: {id} | user: {userId}
+        </p>
     )
 }
 

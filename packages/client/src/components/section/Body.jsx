@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export function Body({ body }) {
-    return <p>{body}</p>
+export function Body({ children }) {
+    return <p className='subtitle' data-testid='section-body'>{children}</p>
 }
 
 Body.propTypes = {
-    body: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
 }

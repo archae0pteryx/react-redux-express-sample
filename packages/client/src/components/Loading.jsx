@@ -1,7 +1,5 @@
 import React from 'react'
 
 export function Loading () {
-    return (
-        <div><h1>Loading...</h1></div>
-    )
+    return <progress className='progress is-large is-info' max='100'></progress>
 }
