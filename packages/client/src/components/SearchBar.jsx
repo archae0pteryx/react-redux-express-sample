@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import * as actions from '../redux/actions'
 import { Button, Input } from '../components/common'
+import { SearchInfo } from './SearchInfo'
 
 function SearchBar({ setFilter, filter, numFound, uniqueUsers }) {
     return (
@@ -24,28 +25,12 @@ function SearchBar({ setFilter, filter, numFound, uniqueUsers }) {
                     Clear Search
                 </Button>
             </div>
-            {/* TODO: Create text component */}
             <div className='has-text-centered'>
-                {!filter ? (
-                    <p className='is-size-5'>
-                        Showing {numFound} Entries by {uniqueUsers} users
-                    </p>
-                ) : (
-                    <>
-                        {numFound > 0 ? (
-                            <p className='is-size-5'>
-                                Found {numFound} result
-                                {numFound === 1 ? '' : 's'} from {uniqueUsers}{' '}
-                                user
-                                {uniqueUsers === 1 ? '' : 's'}
-                            </p>
-                        ) : (
-                            <p className='is-size-5'>
-                                No Results
-                            </p>
-                        )}
-                    </>
-                )}
+                <SearchInfo
+                    filter={filter}
+                    uniqueUsers={uniqueUsers}
+                    numFound={numFound}
+                />
             </div>
         </div>
     )

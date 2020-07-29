@@ -14,7 +14,7 @@ function Home({ getPosts, posts, loading, init, filter }) {
 
     const postsToShow =
         filter.length >= 1
-            ? _.filter(posts, (post) => post.title.indexOf(filter) > -1)
+            ? _.filter(posts, (post) => post.title.toLowerCase().indexOf(filter.toLowerCase()) > -1)
             : posts
 
     const uniqueUsers = Object.keys(_.groupBy(postsToShow, 'userId')).length || 0

@@ -7,7 +7,6 @@ import * as actions from '../redux/actions'
 import { Button, Input, TextArea } from '../components/common'
 
 function Edit({ location, savePost, allPosts }) {
-    const [saved, setSaved] = useState(false)
     const [post, setPost] = useState(
         (location.state && location.state.post) || {}
     )
@@ -17,10 +16,7 @@ function Edit({ location, savePost, allPosts }) {
         (e) => {
             e.preventDefault()
             savePost(post)
-            setSaved(true)
-            setTimeout(() => {
-                setSaved(false)
-            }, 1000)
+            history.push('/')
         },
         [post]
     )
@@ -70,18 +66,18 @@ function Edit({ location, savePost, allPosts }) {
             </form>
             <div className='buttons are-small is-right'>
                 <Button
-                    onClick={() => history.goBack()}
+                    onClick={() => history.push('/')}
                     extraStyle='is-outline is-danger'
                 >
-                    Cancel
+                    Go Back
                 </Button>
-                {saved ? (
-                    <Button extraStyle='is-disabled'>Saved</Button>
-                ) : (
-                    <Button extraStyle='is-success' type='submit' onClick={handleSubmit}>
-                        Save
-                    </Button>
-                )}
+                <Button
+                    extraStyle='is-success'
+                    type='submit'
+                    onClick={handleSubmit}
+                >
+                    Save
+                </Button>
             </div>
         </div>
     )

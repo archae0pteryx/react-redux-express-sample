@@ -6,10 +6,10 @@ afterEach(cleanup)
 
 describe('TextArea', () => {
     it('renders without crashing', () => {
-        const { queryByTestId } = render(
-            <TextArea name='test' value='test' handleChange={() => {}}>TextArea</TextArea>
+        const { getByText } = render(
+            <TextArea name='test' value='test' label='test-label' handleChange={() => {}}/>
         )
-        expect(queryByTestId('textarea')).toBeTruthy()
+        expect(getByText('test-label')).toBeTruthy()
     })
 })
 

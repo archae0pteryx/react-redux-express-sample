@@ -6,8 +6,7 @@ afterEach(cleanup)
 
 describe('Button', () => {
     it('renders without crashing', () => {
-        const { queryByTestId } = render(<Button>button</Button>)
-        expect(queryByTestId('btn')).toBeTruthy()
+        const { getByText } = render(<Button>button</Button>)
+        expect(getByText('button')).toBeTruthy()
     })
 })
-

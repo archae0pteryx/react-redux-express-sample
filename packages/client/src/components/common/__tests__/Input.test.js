@@ -6,10 +6,10 @@ afterEach(cleanup)
 
 describe('Input', () => {
     it('renders without crashing', () => {
-        const { queryByTestId } = render(
-            <Input name='test' value='test' handleChange={() => {}}>Input</Input>
+        const { getByText } = render(
+            <Input name='test' value='test' label='test-label' handleChange={() => {}}/>
         )
-        expect(queryByTestId('input')).toBeTruthy()
+        expect(getByText('test-label')).toBeTruthy()
     })
 })
 
